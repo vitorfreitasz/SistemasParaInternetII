@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-</head>
-<body>
-    <h1>
-    Nome: {{ nome }} Idade: {{idade}}
-    </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrando HTML ao Flask</title>
+  </head>
+  <body>
+    <h1>Nome: {{ nome }} Idade: {{idade}}</h1>
+    <br>
+    <ol>
+      {% for item in teste: %}
+      <li>{{item}}</li>
+      {% endfor %}
+    </ol>
+  </body>
 </html>

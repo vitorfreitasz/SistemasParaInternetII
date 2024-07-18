@@ -13,4 +13,10 @@ def hello_world2(arg):
 
 @app.route("/sobre/<nome>/<idade>")
 def sobre(nome, idade):
-    return render_template('sobre.html', nome = nome, idade = idade)
+    teste = ['FLASKASSO']*8
+    return render_template('sobre.html', nome, idade, teste)
+
+@app.route('/variaveis')
+def usando_variaveis():
+    chamada = {12: 'Joao', 13:'Pablo', 14: 'Filipa'}
+    return render_template('chamada.html', chamada=chamada)

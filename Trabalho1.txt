@@ -1,0 +1,10 @@
+Trabalho 1
+
+Será um CRUD em Flask, com Front-end.
+
+Requisitos:
+
+    - Flask
+    - Banco de dados
+    - HTML / CSS
+    - JS

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamada</title>
+  </head>
+  <body>
+    <h2>
+      <table border=true>
+        <tr>
+            <td>Nome</td>
+          <td>Matricula</td>
+        </tr>
+        {% for matricula, nome in chamada.items() %}
+        <tr>
+            <td>{{nome}}</td>
+          <td>{{matricula}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </h2>
+  </body>
+</html>
